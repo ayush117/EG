@@ -8,12 +8,13 @@ const Card = ({ data }: { data: any}) => {
 
   return (
     <>
-      <div className="flex flex-col justify-between h-60 w-60 rounded bg-slate-700 p-4">
-        <div className="text-lg text-white">
+      <div className="flex font-sans flex-col justify-between min-h-60 max-w-[700px] rounded-lg bg-slate-700 p-6">
+        <div className="text-2xl font-bold text-left text-white">
           {data.title}
+          <p className="text-lg font-normal mt-4">{data.summary}</p>
         </div>
-        <div className="">
-          <button className="w-full h-10 rounded-2xl bg-orange-300 text-xl" onClick={handleClick}>Read</button>
+        <div className="text-left mt-8">
+          <button className="w-full max-w-40 h-10 rounded-lg bg-orange-300 text-xl" onClick={handleClick}>View</button>
         </div>
       </div>
     </>

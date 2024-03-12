@@ -12,7 +12,7 @@ const ArticlesList = () => {
 
   return (
     <>
-      <div className="grid grid-cols-4 gap-8 mt-10">
+      <div className="grid gap-8 mt-10">
         {data !== null &&
           (data as any[]).map((item: any) => <Card data={item} key={item.id}/>)}
       </div>
