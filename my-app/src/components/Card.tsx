@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Card = ({ data }: { data: any}) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/articles/:" + data.id);
+    navigate("/articles/" + data.id);
   }
 
   return (
